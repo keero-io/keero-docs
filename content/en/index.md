@@ -264,4 +264,16 @@ Downloads
   #description
   Additional generated output files packaged for download.
   :::
+
+  :::u-page-feature
+  ---
+  icon: i-lucide-box-select
+  to: /en/hardware/interactive-bom
+  ---
+  #title
+  Interactive BOM
+
+  #description
+  Embedded board viewer for quick assembly inspection and reference designator lookup.
+  :::
 ::
