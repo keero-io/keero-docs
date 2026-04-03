@@ -45,6 +45,18 @@ This documentation is intentionally public and high level. It explains the syste
   ---
   Partner overview
   :::
+
+  :::u-button
+  ---
+  color: neutral
+  icon: i-lucide-file-text
+  size: xl
+  to: /keero/pdf/keero_mainboard_schematic.pdf
+  target: _blank
+  variant: outline
+  ---
+  Open schematic PDF
+  :::
 ::
 
 ::u-page-section
