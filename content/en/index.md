@@ -30,6 +30,7 @@ This site documents the current Keero mainboard revision, available manufacturin
   icon: i-lucide-file-down
   size: xl
   to: /keero/downloads/keero_mainboard_schematic.pdf
+  target: _blank
   variant: outline
   ---
   Open schematic
@@ -108,25 +109,159 @@ Current Hardware Snapshot
   :::
 ::
 
-## Preview
+::u-page-section
+#title
+Project Preview
+
+#description
+Current Keero render assets mirrored from the hardware repository for deployment.
 
 ::div{.keero-docs-embed}
 ![Keero hero](/keero/images/hero.png){.keero-docs-image .keero-docs-image--wide}
 ::
+::
 
-## What Is Documented Here
+::u-page-section
+#title
+What Is Documented Here
 
-- Mainboard subsystem breakdown from the current schematic revision dated `2026-03-09`.
-- Key production components from the BOM, including `AXP2101`, `ESP32-S3-WROOM-1U-N16R8`, `MAX98357A`, `DRV2605L`, `LIS2DW12TR`, and `ICS-41350`.
-- Connector roles for battery, speaker, motor, camera, OLED, microphone, user button, pogo docking, and the ESP breakout header.
-- Manufacturing assets required for PCB fabrication and PCBA.
-- Current firmware state for the tracks module, with a placeholder path for the future full platform firmware.
+#features
+  :::u-page-feature
+  ---
+  icon: i-lucide-file-text
+  ---
+  #title
+  Mainboard Architecture
 
-## Downloads
+  #description
+  Mainboard subsystem breakdown from the current schematic revision dated `2026-03-09`.
+  :::
 
-- [Mainboard schematic PDF](/keero/downloads/keero_mainboard_schematic.pdf)
-- [PCB layout PDF](/keero/downloads/PCB_board_2026-04-02.pdf)
-- [BOM CSV](/keero/downloads/mainboard-bom.csv)
-- [Pick and place CSV](/keero/downloads/mainboard-pick-place.csv)
-- [EasyEDA export](/keero/downloads/easyeda.zip)
-- [Mainboard outputs archive](/keero/downloads/exports.zip)
+  :::u-page-feature
+  ---
+  icon: i-lucide-microchip
+  ---
+  #title
+  Production Components
+
+  #description
+  BOM-based documentation for `AXP2101`, `ESP32-S3-WROOM-1U-N16R8`, `MAX98357A`, `DRV2605L`, `LIS2DW12TR`, and `ICS-41350`.
+  :::
+
+  :::u-page-feature
+  ---
+  icon: i-lucide-plug-zap
+  ---
+  #title
+  Connector Map
+
+  #description
+  Connector roles for battery, speaker, motor, camera, OLED, microphone, user button, pogo docking, and the ESP breakout header.
+  :::
+
+  :::u-page-feature
+  ---
+  icon: i-lucide-package-search
+  ---
+  #title
+  Manufacturing Assets
+
+  #description
+  Production files required for PCB fabrication, PCBA, review, and mechanical validation.
+  :::
+
+  :::u-page-feature
+  ---
+  icon: i-lucide-cpu
+  ---
+  #title
+  Firmware Status
+
+  #description
+  Current tracks firmware state, command format, and a prepared placeholder path for the full Keero platform firmware.
+  :::
+::
+
+::u-page-section
+#title
+Downloads
+
+#features
+  :::u-page-feature
+  ---
+  icon: i-lucide-file-down
+  to: /keero/downloads/keero_mainboard_schematic.pdf
+  target: _blank
+  ---
+  #title
+  Mainboard Schematic PDF
+
+  #description
+  Full schematic export for electrical review and integration work.
+  :::
+
+  :::u-page-feature
+  ---
+  icon: i-lucide-layout-panel-top
+  to: /keero/downloads/PCB_board_2026-04-02.pdf
+  target: _blank
+  ---
+  #title
+  PCB Layout PDF
+
+  #description
+  Board layout export for placement, routing, and connector inspection.
+  :::
+
+  :::u-page-feature
+  ---
+  icon: i-lucide-list-tree
+  to: /keero/downloads/mainboard-bom.csv
+  target: _blank
+  ---
+  #title
+  BOM CSV
+
+  #description
+  Bill of materials used for sourcing, costing, and assembly prep.
+  :::
+
+  :::u-page-feature
+  ---
+  icon: i-lucide-crosshair
+  to: /keero/downloads/mainboard-pick-place.csv
+  target: _blank
+  ---
+  #title
+  Pick and Place CSV
+
+  #description
+  Placement file for PCBA workflows and assembly validation.
+  :::
+
+  :::u-page-feature
+  ---
+  icon: i-lucide-file-archive
+  to: /keero/downloads/easyeda.zip
+  target: _blank
+  ---
+  #title
+  EasyEDA Export
+
+  #description
+  Editable source export copied from the hardware repository.
+  :::
+
+  :::u-page-feature
+  ---
+  icon: i-lucide-folder-open
+  to: /keero/downloads/exports.zip
+  target: _blank
+  ---
+  #title
+  Mainboard Outputs Archive
+
+  #description
+  Additional generated output files packaged for download.
+  :::
+::
