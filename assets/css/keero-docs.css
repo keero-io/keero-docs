@@ -1,0 +1,64 @@
+.keero-docs-image,
+:where(main, article, .prose, .u-page-body) img[src^="/keero/"] {
+  display: block;
+  width: min(100%, 960px);
+  max-width: calc(100vw - 2rem);
+  height: auto;
+  margin: 1.5rem auto;
+  border-radius: 1rem;
+  border: 1px solid color-mix(in srgb, var(--ui-border, #d4d4d8) 88%, transparent);
+  background: color-mix(in srgb, var(--ui-bg, #ffffff) 92%, #f8fafc);
+  box-shadow:
+    0 1px 2px rgba(15, 23, 42, 0.06),
+    0 12px 32px rgba(15, 23, 42, 0.08);
+  object-fit: contain;
+}
+
+.keero-docs-image--wide {
+  width: min(100%, 1120px);
+}
+
+.keero-docs-gallery {
+  display: grid;
+  gap: 1rem;
+  margin: 1.5rem auto 2rem;
+}
+
+.keero-docs-gallery > img,
+.keero-docs-gallery > .keero-docs-image {
+  margin: 0 auto;
+}
+
+.keero-docs-embed {
+  width: min(100%, 1120px);
+  max-width: calc(100vw - 2rem);
+  margin: 1.5rem auto;
+  padding-inline: clamp(0.25rem, 1vw, 0.5rem);
+}
+
+.keero-docs-embed > img,
+.keero-docs-embed > .keero-docs-image {
+  width: 100%;
+  max-width: 100%;
+}
+
+@media (min-width: 900px) {
+  .keero-docs-gallery {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    align-items: start;
+  }
+}
+
+@media (max-width: 640px) {
+  .keero-docs-image,
+  :where(main, article, .prose, .u-page-body) img[src^="/keero/"] {
+    max-width: calc(100vw - 1.25rem);
+    margin: 1rem auto;
+    border-radius: 0.875rem;
+  }
+
+  .keero-docs-embed {
+    max-width: calc(100vw - 1rem);
+    padding-inline: 0;
+  }
+}

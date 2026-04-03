@@ -110,7 +110,9 @@ Current Hardware Snapshot
 
 ## Preview
 
-![Keero hero](/keero/images/hero.png)
+::div{.keero-docs-embed}
+![Keero hero](/keero/images/hero.png){.keero-docs-image .keero-docs-image--wide}
+::
 
 ## What Is Documented Here
 
