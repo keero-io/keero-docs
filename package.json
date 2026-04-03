@@ -1,5 +1,5 @@
 {
-  "name": "my-docs",
+  "name": "keero-docs",
   "scripts": {
     "dev": "nuxt dev",
     "build": "nuxt build"
