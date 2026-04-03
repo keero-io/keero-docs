@@ -1,7 +1,7 @@
 ---
 seo:
   title: Keero Docs
-  description: High-level documentation for the Keero Bot modular AI hardware platform, including architecture, modules, firmware direction, and prototyping status.
+  description: Public documentation for the Keero Bot modular AI hardware platform, including architecture, modules, firmware direction, and prototyping status.
 ---
 
 ::u-page-hero
@@ -11,7 +11,7 @@ Keero Bot Modular AI Hardware Platform
 #description
 Keero Bot is a modular embedded platform for AI-driven physical interaction, built around an ESP32-S3 core and designed to combine sensing, audio, haptics, display, and expansion modules in one coherent system.
 
-This documentation is intentionally public and high level. It explains the system architecture, product direction, prototyping status, and firmware roadmap while keeping production-critical hardware details private.
+This documentation is intentionally public and high level. It explains the system architecture, visible hardware capabilities, modular product direction, prototyping posture, and firmware roadmap while keeping production-critical hardware details private.
 
 #links
   :::u-button
@@ -33,6 +33,17 @@ This documentation is intentionally public and high level. It explains the syste
   variant: outline
   ---
   Open board viewer
+  :::
+
+  :::u-button
+  ---
+  color: neutral
+  icon: i-lucide-handshake
+  size: xl
+  to: /en/overview/partnership-and-prototyping
+  variant: outline
+  ---
+  Partner overview
   :::
 ::
 
@@ -110,6 +121,84 @@ Why Keero Bot
 
 ::u-page-section
 #title
+Why It Works For Sponsors
+
+#features
+  :::u-page-feature
+  ---
+  icon: i-lucide-badge-check
+  ---
+  #title
+  Clear Platform Story
+
+  #description
+  Keero Bot presents a coherent embedded platform narrative with a mainboard, modules, firmware direction, and visible product intent rather than an isolated PCB experiment.
+  :::
+
+  :::u-page-feature
+  ---
+  icon: i-lucide-repeat
+  ---
+  #title
+  Iteration-Oriented
+
+  #description
+  The system is positioned for repeated prototyping and refinement, which aligns well with fabrication partners focused on early hardware programs.
+  :::
+
+  :::u-page-feature
+  ---
+  icon: i-lucide-eye
+  ---
+  #title
+  Public But Controlled
+
+  #description
+  The docs provide enough visibility for technical evaluation while withholding production-critical release assets from unrestricted public access.
+  :::
+::
+
+::u-page-section
+#title
+What PCBWay Can Evaluate Here
+
+#features
+  :::u-page-feature
+  ---
+  icon: i-lucide-circuit-board
+  ---
+  #title
+  Real Mainboard Scope
+
+  #description
+  The site shows a real integrated board with compute, power, camera, display, audio, haptics, sensors, and expansion responsibilities already defined in one compact platform.
+  :::
+
+  :::u-page-feature
+  ---
+  icon: i-lucide-boxes
+  ---
+  #title
+  Modular Product Direction
+
+  #description
+  The project is structured around a reusable mainboard plus dock, tracks, and future accessories, which makes repeated prototype runs and product iteration more meaningful.
+  :::
+
+  :::u-page-feature
+  ---
+  icon: i-lucide-wrench
+  ---
+  #title
+  Practical Prototyping Intent
+
+  #description
+  Keero Bot is documented as something meant to be assembled, tested, and iterated in the real world rather than remaining a concept-only electronics exercise.
+  :::
+::
+
+::u-page-section
+#title
 Current Hardware Snapshot
 
 #description
@@ -118,6 +207,56 @@ Current Keero render assets mirrored from the hardware repository for deployment
 ::div{.keero-docs-embed}
 ![Keero hero](/keero/images/hero.png){.keero-docs-image .keero-docs-image--wide}
 ::
+::
+
+::u-page-section
+#title
+Current Platform Snapshot
+
+#features
+  :::u-page-feature
+  ---
+  icon: i-lucide-microchip
+  ---
+  #title
+  Compute Core
+
+  #description
+  ESP32-S3 acts as the platform brain and anchors the firmware architecture for interaction, connectivity, and module control.
+  :::
+
+  :::u-page-feature
+  ---
+  icon: i-lucide-camera
+  ---
+  #title
+  Interaction Stack
+
+  #description
+  The public hardware scope already includes camera, microphone, speaker, display, motion sensing, and haptic feedback, which gives the platform a strong multi-modal identity.
+  :::
+
+  :::u-page-feature
+  ---
+  icon: i-lucide-battery-charging
+  ---
+  #title
+  Portable + Docked Use
+
+  #description
+  The system is designed for battery-based operation while also supporting clean development access and future docking workflows.
+  :::
+
+  :::u-page-feature
+  ---
+  icon: i-lucide-route
+  ---
+  #title
+  Expansion Path
+
+  #description
+  Module interfaces and pogo-based expansion make it possible to reuse one core board across different demos, accessory concepts, and future product directions.
+  :::
 ::
 
 ::u-page-section
@@ -167,6 +306,56 @@ What Is Public
 
   #description
   Public progress tracking covers what is already integrated, what is in active prototyping, and what is planned for future firmware and module releases.
+  :::
+::
+
+::u-page-section
+#title
+Documentation Map
+
+#features
+  :::u-page-feature
+  ---
+  icon: i-lucide-book-open
+  ---
+  #title
+  Overview
+
+  #description
+  Start with the introduction and architecture pages to understand the platform story, subsystem boundaries, and intended audience quickly.
+  :::
+
+  :::u-page-feature
+  ---
+  icon: i-lucide-cpu
+  ---
+  #title
+  Hardware
+
+  #description
+  Hardware pages describe the mainboard role, power and interconnect philosophy, module strategy, manufacturing posture, and public-facing interface map.
+  :::
+
+  :::u-page-feature
+  ---
+  icon: i-lucide-code-xml
+  ---
+  #title
+  Firmware
+
+  #description
+  Firmware pages show that the software side is actively progressing and that the hardware is intended to become a coherent platform rather than a static board.
+  :::
+
+  :::u-page-feature
+  ---
+  icon: i-lucide-box-select
+  ---
+  #title
+  Board Viewer
+
+  #description
+  The interactive board viewer gives sponsors and collaborators a visual reference of the current hardware without exposing the project as a public export tool.
   :::
 ::
 
