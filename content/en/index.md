@@ -1,7 +1,7 @@
 ---
 seo:
   title: Keero Docs
-  description: Complete documentation for the Keero modular AI hardware platform, including mainboard architecture, manufacturing files, connectors, modules, and firmware status.
+  description: High-level documentation for the Keero Bot modular AI hardware platform, including architecture, modules, firmware direction, and prototyping status.
 ---
 
 ::u-page-hero
@@ -9,9 +9,9 @@ seo:
 Keero Bot Modular AI Hardware Platform
 
 #description
-Complete open documentation for the Keero hardware platform built around the ESP32-S3.
+Keero Bot is a modular embedded platform for AI-driven physical interaction, built around an ESP32-S3 core and designed to combine sensing, audio, haptics, display, and expansion modules in one coherent system.
 
-This site documents the current Keero mainboard revision, available manufacturing files, connector map, subsystem architecture, and the early firmware work for the tracks module.
+This documentation is intentionally public and high level. It explains the system architecture, product direction, prototyping status, and firmware roadmap while keeping production-critical hardware details private.
 
 #links
   :::u-button
@@ -27,19 +27,18 @@ This site documents the current Keero mainboard revision, available manufacturin
   :::u-button
   ---
   color: neutral
-  icon: i-lucide-file-down
+  icon: i-lucide-box-select
   size: xl
-  to: /keero/downloads/keero_mainboard_schematic.pdf
-  target: _blank
+  to: /en/hardware/interactive-bom
   variant: outline
   ---
-  Open schematic
+  Open board viewer
   :::
 ::
 
 ::u-page-section
 #title
-Current Hardware Snapshot
+Why Keero Bot
 
 #features
   :::u-page-feature
@@ -47,21 +46,21 @@ Current Hardware Snapshot
   icon: i-lucide-cpu
   ---
   #title
-  ESP32-S3 Core
-  
+  AI-Ready Core
+
   #description
-  Mainboard built around `ESP32-S3-WROOM-1U-N16R8` with native USB, external antenna support, camera routing, and expansion headers.
+  Built around ESP32-S3 to support connected, sensor-rich embedded experiences with a practical path toward audio, vision, and interaction workloads.
   :::
 
   :::u-page-feature
   ---
-  icon: i-lucide-battery-charging
+  icon: i-lucide-box
   ---
   #title
-  Managed Power Tree
-  
+  Modular Hardware
+
   #description
-  `AXP2101` PMIC generates the main rails used across the system, including `3V3A`, `3V3B`, `2V8A`, `DV_2.8V`, `1V5A`, and display boost power.
+  The system is designed as a reusable mainboard plus swappable modules such as dock and tracks, making it suitable for iterative product development.
   :::
 
   :::u-page-feature
@@ -69,10 +68,10 @@ Current Hardware Snapshot
   icon: i-lucide-scan-face
   ---
   #title
-  Sensors and Interaction
-  
+  Multi-Modal Interaction
+
   #description
-  The current board integrates camera, OLED, digital microphone, I2S amplifier, haptics, accelerometer, and pogo-based module expansion.
+  Keero Bot combines camera, audio, haptics, motion sensing, and display support so interaction logic can move beyond a simple dev-board workflow.
   :::
 
   :::u-page-feature
@@ -80,10 +79,10 @@ Current Hardware Snapshot
   icon: i-lucide-factory
   ---
   #title
-  Manufacturing Ready
-  
+  Prototype-Friendly
+
   #description
-  Gerbers, BOM, pick-place, EasyEDA export, and 3D files are all linked so the project can be inspected, ordered, and assembled from the documentation site.
+  The board was designed with real PCB manufacturing and early assembly workflows in mind, making it suitable for serious prototyping and sponsor evaluation.
   :::
 
   :::u-page-feature
@@ -91,27 +90,27 @@ Current Hardware Snapshot
   icon: i-lucide-joystick
   ---
   #title
-  Modular Expansion
-  
+  Physical AI Experiments
+
   #description
-  Dock and tracks modules are part of the system design, with the tracks firmware already containing motion, light, and battery monitoring foundations.
+  The platform is aimed at embodied AI ideas where compute meets movement, sensing, feedback, and real-world environmental input.
   :::
 
   :::u-page-feature
   ---
-  icon: i-lucide-wrench
+  icon: i-lucide-code-xml
   ---
   #title
-  Firmware Roadmap
-  
+  Open Firmware Direction
+
   #description
-  Firmware is still in bring-up, but the docs already cover the current `tracks` PlatformIO target, UART command format, and subsystem responsibilities.
+  Firmware is the openly evolving software layer of the platform, while hardware documentation stays intentionally higher level to protect production know-how.
   :::
 ::
 
 ::u-page-section
 #title
-Project Preview
+Current Hardware Snapshot
 
 #description
 Current Keero render assets mirrored from the hardware repository for deployment.
@@ -123,29 +122,18 @@ Current Keero render assets mirrored from the hardware repository for deployment
 
 ::u-page-section
 #title
-What Is Documented Here
+What Is Public
 
 #features
   :::u-page-feature
   ---
-  icon: i-lucide-file-text
+  icon: i-lucide-workflow
   ---
   #title
-  Mainboard Architecture
+  Architecture
 
   #description
-  Mainboard subsystem breakdown from the current schematic revision dated `2026-03-09`.
-  :::
-
-  :::u-page-feature
-  ---
-  icon: i-lucide-microchip
-  ---
-  #title
-  Production Components
-
-  #description
-  BOM-based documentation for `AXP2101`, `ESP32-S3-WROOM-1U-N16R8`, `MAX98357A`, `DRV2605L`, `LIS2DW12TR`, and `ICS-41350`.
+  Public docs describe the system through compute, power, interaction, module expansion, and firmware responsibilities rather than low-level electrical implementation.
   :::
 
   :::u-page-feature
@@ -153,127 +141,70 @@ What Is Documented Here
   icon: i-lucide-plug-zap
   ---
   #title
-  Connector Map
+  Modular Design
 
   #description
-  Connector roles for battery, speaker, motor, camera, OLED, microphone, user button, pogo docking, and the ESP breakout header.
+  The docs explain how the mainboard, dock, tracks, and module interfaces fit together so developers and sponsors can understand the platform vision quickly.
   :::
 
   :::u-page-feature
   ---
-  icon: i-lucide-package-search
+  icon: i-lucide-compass
   ---
   #title
-  Manufacturing Assets
+  Use Cases
 
   #description
-  Production files required for PCB fabrication, PCBA, review, and mechanical validation.
+  Keero Bot is positioned for embodied AI experiments, interactive robotics, docking concepts, and sensor-rich hardware prototyping.
   :::
 
   :::u-page-feature
   ---
-  icon: i-lucide-cpu
+  icon: i-lucide-wrench
   ---
   #title
-  Firmware Status
+  Status and Roadmap
 
   #description
-  Current tracks firmware state, command format, and a prepared placeholder path for the full Keero platform firmware.
+  Public progress tracking covers what is already integrated, what is in active prototyping, and what is planned for future firmware and module releases.
   :::
 ::
 
 ::u-page-section
 #title
-Downloads
+Access Policy
 
 #features
   :::u-page-feature
   ---
-  icon: i-lucide-file-down
-  to: /keero/downloads/keero_mainboard_schematic.pdf
-  target: _blank
+  icon: i-lucide-lock
   ---
   #title
-  Mainboard Schematic PDF
+  Production Files Are Private
 
   #description
-  Full schematic export for electrical review and integration work.
+  Gerbers, pick-and-place outputs, editable design sources, and full manufacturing BOMs are not publicly distributed in this documentation build.
   :::
 
   :::u-page-feature
   ---
-  icon: i-lucide-layout-panel-top
-  to: /keero/downloads/PCB_board_2026-04-02.pdf
-  target: _blank
+  icon: i-lucide-badge-info
   ---
   #title
-  PCB Layout PDF
+  Open but Protected
 
   #description
-  Board layout export for placement, routing, and connector inspection.
+  Keero Bot is developed in an open-hardware spirit, but the public release is not intended to enable unrestricted commercial cloning of the official hardware.
   :::
 
   :::u-page-feature
   ---
-  icon: i-lucide-list-tree
-  to: /keero/downloads/mainboard-bom.csv
-  target: _blank
+  icon: i-lucide-handshake
   ---
   #title
-  BOM CSV
+  Sponsor-Friendly Review
 
   #description
-  Bill of materials used for sourcing, costing, and assembly prep.
-  :::
-
-  :::u-page-feature
-  ---
-  icon: i-lucide-crosshair
-  to: /keero/downloads/mainboard-pick-place.csv
-  target: _blank
-  ---
-  #title
-  Pick and Place CSV
-
-  #description
-  Placement file for PCBA workflows and assembly validation.
-  :::
-
-  :::u-page-feature
-  ---
-  icon: i-lucide-file-archive
-  to: /keero/downloads/easyeda.zip
-  target: _blank
-  ---
-  #title
-  EasyEDA Export
-
-  #description
-  Editable source export copied from the hardware repository.
-  :::
-
-  :::u-page-feature
-  ---
-  icon: i-lucide-folder-open
-  to: /keero/downloads/exports.zip
-  target: _blank
-  ---
-  #title
-  Mainboard Outputs Archive
-
-  #description
-  Additional generated output files packaged for download.
-  :::
-
-  :::u-page-feature
-  ---
-  icon: i-lucide-box-select
-  to: /en/hardware/interactive-bom
-  ---
-  #title
-  Interactive BOM
-
-  #description
-  Embedded board viewer for quick assembly inspection and reference designator lookup.
+  Additional production detail can be shared selectively for prototyping, sponsorship, or manufacturing discussions when there is a legitimate project need.
   :::
 ::
