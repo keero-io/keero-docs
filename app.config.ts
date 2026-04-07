@@ -1,4 +1,8 @@
 export default defineAppConfig({
+  assistant: {
+    floatingInput: false,
+    explainWithAi: false
+  },
   docus: {
     title: 'Keero Docs',
     description: 'Open-source documentation for the Keero modular AI hardware platform.',
