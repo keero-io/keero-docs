@@ -1,17 +1,17 @@
 ---
 seo:
   title: Keero Docs
-  description: Public documentation for the Keero Bot modular AI hardware platform, including architecture, modules, firmware direction, and prototyping status.
+  description: Public documentation for the Keero modular AI hardware project, including architecture, hardware overview, module direction, and firmware status.
 ---
 
 ::u-page-hero
 #title
-Keero Bot Modular AI Hardware Platform
+Keero Bot Documentation
 
 #description
-Keero Bot is a modular embedded platform for AI-driven physical interaction, built around an ESP32-S3 core and designed to combine sensing, audio, haptics, display, and expansion modules in one coherent system.
+Keero is an early modular AI hardware project built around an ESP32-S3 mainboard. The goal is to grow it from a compact prototype platform into a more complete device with audio, sensing, display, haptics, camera support, and add-on modules such as dock and tracks.
 
-This documentation is intentionally public and high level. It explains the system architecture, visible hardware capabilities, modular product direction, prototyping posture, and firmware roadmap while keeping production-critical hardware details private.
+This site is written as public project documentation, not as a manufacturing release. It explains what the platform is, how the main pieces fit together, what is already real, and what is still in progress.
 
 #links
   :::u-button
@@ -21,7 +21,7 @@ This documentation is intentionally public and high level. It explains the syste
   to: /en/overview/introduction
   trailing-icon: i-lucide-arrow-right
   ---
-  Explore docs
+  Start here
   :::
 
   :::u-button
@@ -33,17 +33,6 @@ This documentation is intentionally public and high level. It explains the syste
   variant: outline
   ---
   Open board viewer
-  :::
-
-  :::u-button
-  ---
-  color: neutral
-  icon: i-lucide-handshake
-  size: xl
-  to: /en/overview/partnership-and-prototyping
-  variant: outline
-  ---
-  Partner overview
   :::
 
   :::u-button
@@ -61,7 +50,7 @@ This documentation is intentionally public and high level. It explains the syste
 
 ::u-page-section
 #title
-Why Keero Bot
+What Keero Is
 
 #features
   :::u-page-feature
@@ -69,10 +58,10 @@ Why Keero Bot
   icon: i-lucide-cpu
   ---
   #title
-  AI-Ready Core
+  Mainboard First
 
   #description
-  Built around ESP32-S3 to support connected, sensor-rich embedded experiences with a practical path toward audio, vision, and interaction workloads.
+  Keero starts with a compact ESP32-S3 mainboard that brings compute, power, interaction hardware, and module connectivity into one reusable core.
   :::
 
   :::u-page-feature
@@ -80,10 +69,10 @@ Why Keero Bot
   icon: i-lucide-box
   ---
   #title
-  Modular Hardware
+  Modular By Design
 
   #description
-  The system is designed as a reusable mainboard plus swappable modules such as dock and tracks, making it suitable for iterative product development.
+  The mainboard is meant to work with add-ons such as dock and tracks, so the project can evolve without redesigning everything around a single static PCB.
   :::
 
   :::u-page-feature
@@ -91,32 +80,10 @@ Why Keero Bot
   icon: i-lucide-scan-face
   ---
   #title
-  Multi-Modal Interaction
+  Built For Interaction
 
   #description
-  Keero Bot combines camera, audio, haptics, motion sensing, and display support so interaction logic can move beyond a simple dev-board workflow.
-  :::
-
-  :::u-page-feature
-  ---
-  icon: i-lucide-factory
-  ---
-  #title
-  Prototype-Friendly
-
-  #description
-  The board was designed with real PCB manufacturing and early assembly workflows in mind, making it suitable for serious prototyping and sponsor evaluation.
-  :::
-
-  :::u-page-feature
-  ---
-  icon: i-lucide-joystick
-  ---
-  #title
-  Physical AI Experiments
-
-  #description
-  The platform is aimed at embodied AI ideas where compute meets movement, sensing, feedback, and real-world environmental input.
+  The hardware direction already includes audio, haptics, motion sensing, display support, and camera connector paths, which makes the platform more than a generic dev board.
   :::
 
   :::u-page-feature
@@ -124,88 +91,32 @@ Why Keero Bot
   icon: i-lucide-code-xml
   ---
   #title
-  Open Firmware Direction
+  Open Where It Helps
 
   #description
-  Firmware is the openly evolving software layer of the platform, while hardware documentation stays intentionally higher level to protect production know-how.
-  :::
-::
-
-::u-page-section
-#title
-Why It Works For Sponsors
-
-#features
-  :::u-page-feature
-  ---
-  icon: i-lucide-badge-check
-  ---
-  #title
-  Clear Platform Story
-
-  #description
-  Keero Bot presents a coherent embedded platform narrative with a mainboard, modules, firmware direction, and visible product intent rather than an isolated PCB experiment.
+  Firmware and architecture are documented openly. Production-grade hardware release files stay private so the project can remain public without becoming trivial to clone.
   :::
 
   :::u-page-feature
   ---
-  icon: i-lucide-repeat
+  icon: i-lucide-joystick
   ---
   #title
-  Iteration-Oriented
+  Still Early
 
   #description
-  The system is positioned for repeated prototyping and refinement, which aligns well with fabrication partners focused on early hardware programs.
+  This is an active prototype project. Some parts are already real and testable, while other parts are documented as direction, not as finished product behavior.
   :::
 
   :::u-page-feature
   ---
-  icon: i-lucide-eye
+  icon: i-lucide-users
   ---
   #title
-  Public But Controlled
+  Community Friendly
 
   #description
-  The docs provide enough visibility for technical evaluation while withholding production-critical release assets from unrestricted public access.
-  :::
-::
-
-::u-page-section
-#title
-What PCBWay Can Evaluate Here
-
-#features
-  :::u-page-feature
-  ---
-  icon: i-lucide-circuit-board
-  ---
-  #title
-  Real Mainboard Scope
-
-  #description
-  The site shows a real integrated board with compute, power, camera, display, audio, haptics, sensors, and expansion responsibilities already defined in one compact platform.
-  :::
-
-  :::u-page-feature
-  ---
-  icon: i-lucide-boxes
-  ---
-  #title
-  Modular Product Direction
-
-  #description
-  The project is structured around a reusable mainboard plus dock, tracks, and future accessories, which makes repeated prototype runs and product iteration more meaningful.
-  :::
-
-  :::u-page-feature
-  ---
-  icon: i-lucide-wrench
-  ---
-  #title
-  Practical Prototyping Intent
-
-  #description
-  Keero Bot is documented as something meant to be assembled, tested, and iterated in the real world rather than remaining a concept-only electronics exercise.
+  The docs are meant to help makers, embedded developers, and curious followers understand the project quickly without needing a full private hardware package.
   :::
 ::
 
@@ -231,10 +142,21 @@ Current Platform Snapshot
   icon: i-lucide-microchip
   ---
   #title
-  Compute Core
+  ESP32-S3 Core
 
   #description
-  ESP32-S3 acts as the platform brain and anchors the firmware architecture for interaction, connectivity, and module control.
+  The platform is built around ESP32-S3-WROOM-1U-N16R8 as the central compute and connectivity module for firmware, peripherals, and module control.
+  :::
+
+  :::u-page-feature
+  ---
+  icon: i-lucide-audio-lines
+  ---
+  #title
+  Audio And Feedback
+
+  #description
+  The current board direction includes microphone input, speaker output, haptic feedback, and local user feedback paths for more expressive prototypes.
   :::
 
   :::u-page-feature
@@ -242,10 +164,10 @@ Current Platform Snapshot
   icon: i-lucide-camera
   ---
   #title
-  Interaction Stack
+  Camera And Display Paths
 
   #description
-  The public hardware scope already includes camera, microphone, speaker, display, motion sensing, and haptic feedback, which gives the platform a strong multi-modal identity.
+  Keero includes connector paths for camera and small display workflows. These are part of the board architecture, even when the final attached module or enclosure is still evolving.
   :::
 
   :::u-page-feature
@@ -253,10 +175,21 @@ Current Platform Snapshot
   icon: i-lucide-battery-charging
   ---
   #title
-  Portable + Docked Use
+  Portable Power Direction
 
   #description
-  The system is designed for battery-based operation while also supporting clean development access and future docking workflows.
+  The project uses a battery-oriented power-management approach so the board can move beyond a USB-only lab setup and toward portable and docked use.
+  :::
+
+  :::u-page-feature
+  ---
+  icon: i-lucide-boxes
+  ---
+  #title
+  Dock And Mobility Ideas
+
+  #description
+  The first visible module directions are dock and tracks, which help explain where the platform can grow next.
   :::
 
   :::u-page-feature
@@ -264,66 +197,16 @@ Current Platform Snapshot
   icon: i-lucide-route
   ---
   #title
-  Expansion Path
+  Firmware In Progress
 
   #description
-  Module interfaces and pogo-based expansion make it possible to reuse one core board across different demos, accessory concepts, and future product directions.
+  Firmware is still early overall, but the tracks module already has real code and serves as the clearest example of how the platform can turn into a working device family.
   :::
 ::
 
 ::u-page-section
 #title
-What Is Public
-
-#features
-  :::u-page-feature
-  ---
-  icon: i-lucide-workflow
-  ---
-  #title
-  Architecture
-
-  #description
-  Public docs describe the system through compute, power, interaction, module expansion, and firmware responsibilities rather than low-level electrical implementation.
-  :::
-
-  :::u-page-feature
-  ---
-  icon: i-lucide-plug-zap
-  ---
-  #title
-  Modular Design
-
-  #description
-  The docs explain how the mainboard, dock, tracks, and module interfaces fit together so developers and sponsors can understand the platform vision quickly.
-  :::
-
-  :::u-page-feature
-  ---
-  icon: i-lucide-compass
-  ---
-  #title
-  Use Cases
-
-  #description
-  Keero Bot is positioned for embodied AI experiments, interactive robotics, docking concepts, and sensor-rich hardware prototyping.
-  :::
-
-  :::u-page-feature
-  ---
-  icon: i-lucide-wrench
-  ---
-  #title
-  Status and Roadmap
-
-  #description
-  Public progress tracking covers what is already integrated, what is in active prototyping, and what is planned for future firmware and module releases.
-  :::
-::
-
-::u-page-section
-#title
-Documentation Map
+What You Can Do Next
 
 #features
   :::u-page-feature
@@ -331,81 +214,31 @@ Documentation Map
   icon: i-lucide-book-open
   ---
   #title
-  Overview
+  Read The Overview
 
   #description
-  Start with the introduction and architecture pages to understand the platform story, subsystem boundaries, and intended audience quickly.
+  Start with the overview pages if you want the short version of what Keero is trying to become.
   :::
 
   :::u-page-feature
   ---
-  icon: i-lucide-cpu
+  icon: i-lucide-circuit-board
   ---
   #title
-  Hardware
+  Inspect The Hardware
 
   #description
-  Hardware pages describe the mainboard role, power and interconnect philosophy, module strategy, manufacturing posture, and public-facing interface map.
+  Visit the hardware section for the mainboard role, module strategy, connector map, and the interactive board viewer.
   :::
 
   :::u-page-feature
   ---
-  icon: i-lucide-code-xml
+  icon: i-lucide-binary
   ---
   #title
-  Firmware
+  Check Firmware Status
 
   #description
-  Firmware pages show that the software side is actively progressing and that the hardware is intended to become a coherent platform rather than a static board.
-  :::
-
-  :::u-page-feature
-  ---
-  icon: i-lucide-box-select
-  ---
-  #title
-  Board Viewer
-
-  #description
-  The interactive board viewer gives sponsors and collaborators a visual reference of the current hardware without exposing the project as a public export tool.
-  :::
-::
-
-::u-page-section
-#title
-Access Policy
-
-#features
-  :::u-page-feature
-  ---
-  icon: i-lucide-lock
-  ---
-  #title
-  Production Files Are Private
-
-  #description
-  Gerbers, pick-and-place outputs, editable design sources, and full manufacturing BOMs are not publicly distributed in this documentation build.
-  :::
-
-  :::u-page-feature
-  ---
-  icon: i-lucide-badge-info
-  ---
-  #title
-  Open but Protected
-
-  #description
-  Keero Bot is developed in an open-hardware spirit, but the public release is not intended to enable unrestricted commercial cloning of the official hardware.
-  :::
-
-  :::u-page-feature
-  ---
-  icon: i-lucide-handshake
-  ---
-  #title
-  Sponsor-Friendly Review
-
-  #description
-  Additional production detail can be shared selectively for prototyping, sponsorship, or manufacturing discussions when there is a legitimate project need.
+  Use the firmware pages to see what is already implemented and what is still placeholder territory.
   :::
 ::
