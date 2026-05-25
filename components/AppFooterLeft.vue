@@ -1,5 +1,5 @@
 <template>
   <div class="text-sm text-muted">
-    Copyright © {{ new Date().getFullYear() }} Jakša Tomović
+    Copyright © {{ new Date().getFullYear() }} keero.io
   </div>
 </template>
